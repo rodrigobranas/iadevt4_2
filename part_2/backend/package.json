@@ -1,0 +1,25 @@
+{
+  "name": "@backend/api",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "lint": "echo \"No linting configured\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hono/node-server": "^1.9.0",
+    "dotenv": "^17.2.1",
+    "hono": "^4.8.1",
+    "zod": "^4.1.13"
+  }
+}
